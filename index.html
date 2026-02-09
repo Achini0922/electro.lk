@@ -3,12 +3,12 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Electro.lk | a@a Industries & Solutions</title>
+  <title>Electro.lk — a@a Industries & Solutions</title>
   <meta name="description" content="Electro.lk — Electronic components, projects, 3D designs, engineering drawings, and DIY kits by a@a Industries & Solutions." />
-  <meta property="og:title" content="Electro.lk | a@a Industries & Solutions" />
+  <meta property="og:title" content="Electro.lk — a@a Industries & Solutions" />
   <meta property="og:description" content="Shop electronic components and explore projects, 3D designs, engineering drawings, and DIY kits. Checkout via WhatsApp." />
   <meta property="og:type" content="website" />
-  <link rel="icon" type="image/png" href="assets/favicon.png" />
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Poppins:wght@600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
@@ -34,92 +34,89 @@
   </header>
 
   <main id="home">
-    <!-- HERO -->
     <section class="hero container" aria-labelledby="hero-title">
       <div class="hero-text">
         <h1 id="hero-title">Electronics that power your ideas.</h1>
-        <p class="sub">Electro.lk by <strong>a@a Industries & Solutions</strong> — reliable electronic components, ready‑to‑build projects, custom 3D designs, engineering drawings, and DIY kits.</p>
+        <p class="sub">Electro.lk by <strong>a@a Industries &amp; Solutions</strong> — reliable electronic components, ready‑to‑build projects, custom 3D designs, engineering drawings, and DIY kits.</p>
         <div class="cta">
           <a class="btn btn-primary" href="#shop">Shop components</a>
           <a class="btn btn-ghost" href="#projects">Explore projects</a>
         </div>
         <ul class="stats" aria-label="Highlights">
           <li><strong>Fast</strong> Sri Lanka delivery</li>
-          <li><strong>Tested</strong> parts & kits</li>
-          <li><strong>Custom</strong> 3D & drawings</li>
+          <li><strong>Tested</strong> parts &amp; kits</li>
+          <li><strong>Custom</strong> 3D &amp; drawings</li>
         </ul>
       </div>
       <figure class="hero-media">
-        <img src="assets/hero-banner.png" alt="Electronics components and DIY kits banner" />
+        <img src="assets/hero-banner.svg" alt="Electronics components and DIY kits banner" />
       </figure>
     </section>
 
-    <!-- SHOP / COMPONENTS -->
     <section id="shop" class="section container" aria-labelledby="shop-title">
       <div class="section-head">
         <h2 id="shop-title">Electronic Components</h2>
         <div class="shop-controls">
           <input id="product-search" type="search" placeholder="Search components (e.g., resistor, Arduino)" aria-label="Search products" />
-          <div class="filters" role="tablist" aria-label="Category filters">
-            <button class="filter active" data-filter="all" role="tab" aria-selected="true">All</button>
-            <button class="filter" data-filter="boards" role="tab">Boards</button>
-            <button class="filter" data-filter="passive" role="tab">Passives</button>
-            <button class="filter" data-filter="tools" role="tab">Tools</button>
-          </div>
+        </div>
+        <div class="filters" role="tablist" aria-label="Category filters">
+          <button class="filter active" data-filter="all" role="tab" aria-selected="true">All</button>
+          <button class="filter" data-filter="boards" role="tab">Boards</button>
+          <button class="filter" data-filter="passive" role="tab">Passives</button>
+          <button class="filter" data-filter="tools" role="tab">Tools</button>
         </div>
       </div>
 
-      <div class="products" id="product-grid" role="list">
-        <!-- Sample products; replace/extend with real items -->
-        <article class="product" data-category="passive" role="listitem">
-          <img src="assets/product-resistors.png" alt="Resistor assorted pack" />
-          <div class="product-body">
-            <h3>Resistor Assorted Pack</h3>
-            <p class="sku">SKU: R-100</p>
-            <p class="price" data-price="250">LKR 250</p>
-            <button class="btn btn-primary add-to-cart" data-sku="R-100" data-name="Resistor Assorted Pack" data-price="250">Add to cart</button>
-          </div>
-        </article>
+      <div class="two-col">
+        <div class="products" id="product-grid" role="list">
+          <article class="product" data-category="passive" role="listitem">
+            <img src="assets/product-resistors.svg" alt="Resistor assorted pack" />
+            <div class="product-body">
+              <h3>Resistor Assorted Pack</h3>
+              <p class="sku">SKU: R-100</p>
+              <p class="price" data-price="250">LKR 250</p>
+              <button class="btn btn-primary add-to-cart" data-sku="R-100" data-name="Resistor Assorted Pack" data-price="250">Add to cart</button>
+            </div>
+          </article>
 
-        <article class="product" data-category="boards" role="listitem">
-          <img src="assets/product-arduino.png" alt="Arduino Uno compatible" />
-          <div class="product-body">
-            <h3>Arduino Uno (Compatible)</h3>
-            <p class="sku">SKU: A-UNO</p>
-            <p class="price" data-price="3850">LKR 3,850</p>
-            <button class="btn btn-primary add-to-cart" data-sku="A-UNO" data-name="Arduino Uno (Compatible)" data-price="3850">Add to cart</button>
-          </div>
-        </article>
+          <article class="product" data-category="boards" role="listitem">
+            <img src="assets/product-arduino.svg" alt="Arduino Uno compatible" />
+            <div class="product-body">
+              <h3>Arduino Uno (Compatible)</h3>
+              <p class="sku">SKU: A-UNO</p>
+              <p class="price" data-price="3850">LKR 3,850</p>
+              <button class="btn btn-primary add-to-cart" data-sku="A-UNO" data-name="Arduino Uno (Compatible)" data-price="3850">Add to cart</button>
+            </div>
+          </article>
 
-        <article class="product" data-category="tools" role="listitem">
-          <img src="assets/product-solder.png" alt="Soldering Iron 60W" />
-          <div class="product-body">
-            <h3>Soldering Iron 60W</h3>
-            <p class="sku">SKU: SI-60</p>
-            <p class="price" data-price="1850">LKR 1,850</p>
-            <button class="btn btn-primary add-to-cart" data-sku="SI-60" data-name="Soldering Iron 60W" data-price="1850">Add to cart</button>
-          </div>
-        </article>
-      </div>
-
-      <!-- Cart -->
-      <aside class="cart" aria-labelledby="cart-title">
-        <h3 id="cart-title">Cart</h3>
-        <div id="cart-items"></div>
-        <div class="cart-footer">
-          <p><strong>Total:</strong> <span id="cart-total">LKR 0</span></p>
-          <button id="checkout-btn" class="btn btn-primary">Checkout via WhatsApp</button>
-          <p class="small">WhatsApp number is pre-configured: <code>94771831215</code></p>
+          <article class="product" data-category="tools" role="listitem">
+            <img src="assets/product-solder.svg" alt="Soldering Iron 60W" />
+            <div class="product-body">
+              <h3>Soldering Iron 60W</h3>
+              <p class="sku">SKU: SI-60</p>
+              <p class="price" data-price="1850">LKR 1,850</p>
+              <button class="btn btn-primary add-to-cart" data-sku="SI-60" data-name="Soldering Iron 60W" data-price="1850">Add to cart</button>
+            </div>
+          </article>
         </div>
-      </aside>
+
+        <aside class="cart" aria-labelledby="cart-title">
+          <h3 id="cart-title">Cart</h3>
+          <div id="cart-items"></div>
+          <div class="cart-footer">
+            <p><strong>Total:</strong> <span id="cart-total">LKR 0</span></p>
+            <button id="checkout-btn" class="btn btn-primary">Checkout via WhatsApp</button>
+            <p class="small">WhatsApp number is pre-configured: <code>94771831215</code></p>
+          </div>
+        </aside>
+      </div>
     </section>
 
-    <!-- PROJECTS (Electronic Projects) -->
     <section id="projects" class="section container" aria-labelledby="projects-title">
       <h2 id="projects-title">Electronic Projects</h2>
       <div class="grid">
         <article class="project">
-          <img src="assets/project-line-follower.png" alt="Line follower robot project" />
+          <img src="assets/project-line-follower.svg" alt="Line follower robot project" />
           <div class="project-body">
             <h3>Line Follower Robot</h3>
             <p>Complete kit + guide. Learn sensors, control, and tuning.</p>
@@ -127,28 +124,27 @@
           </div>
         </article>
         <article class="project">
-          <img src="assets/project-iot.png" alt="IoT temperature monitor" />
+          <img src="assets/project-iot.svg" alt="IoT temperature monitor" />
           <div class="project-body">
             <h3>IoT Temp Monitor</h3>
-            <p>ESP + cloud dashboard. Ideal for labs & storage.</p>
+            <p>ESP + cloud dashboard. Ideal for labs &amp; storage.</p>
             <a class="link" href="#shop">Get parts →</a>
           </div>
         </article>
       </div>
     </section>
 
-    <!-- SERVICES: 3D Designs & Engineering Drawings -->
     <section id="services" class="section container" aria-labelledby="services-title">
       <h2 id="services-title">3D Designs &amp; Engineering Drawings</h2>
       <div class="cards">
         <article class="card">
-          <img src="assets/service-3d.png" alt="Custom 3D printed enclosure design" />
+          <img src="assets/service-3d.svg" alt="Custom 3D printed enclosure design" />
           <h3>Custom 3D Enclosures</h3>
           <p>Design &amp; print enclosures for boards, sensors, and panels.</p>
           <a class="btn btn-ghost" href="#contact">Request a quote</a>
         </article>
         <article class="card">
-          <img src="assets/service-draw.png" alt="Professional engineering drawings" />
+          <img src="assets/service-draw.svg" alt="Professional engineering drawings" />
           <h3>Engineering Drawings</h3>
           <p>Clear manufacturing drawings with GD&amp;T and BOM.</p>
           <a class="btn btn-ghost" href="#contact">Request a quote</a>
@@ -156,12 +152,11 @@
       </div>
     </section>
 
-    <!-- DIY -->
     <section id="diy" class="section container" aria-labelledby="diy-title">
       <h2 id="diy-title">DIY Projects &amp; Kits</h2>
       <div class="grid">
         <article class="project">
-          <img src="assets/diy-solder-kit.png" alt="DIY solder practice kit" />
+          <img src="assets/diy-solder-kit.svg" alt="DIY solder practice kit" />
           <div class="project-body">
             <h3>Solder Practice Kit</h3>
             <p>Practice through-hole soldering. Includes spare parts.</p>
@@ -169,7 +164,7 @@
           </div>
         </article>
         <article class="project">
-          <img src="assets/diy-led.png" alt="DIY LED matrix kit" />
+          <img src="assets/diy-led.svg" alt="DIY LED matrix kit" />
           <div class="project-body">
             <h3>LED Matrix Kit</h3>
             <p>Learn multiplexing &amp; animations with a simple controller.</p>
@@ -179,13 +174,12 @@
       </div>
     </section>
 
-    <!-- CONTACT (WhatsApp first) -->
     <section id="contact" class="section container" aria-labelledby="contact-title">
       <h2 id="contact-title">Contact</h2>
       <div class="contact-grid">
         <div>
           <p><strong>WhatsApp</strong> (fastest): Click the button to chat. Please send your name, address, and order list.</p>
-          <a id="wa-contact" class="btn btn-primary" href="#">Chat on WhatsApp</a>
+          <a id="wa-contact" class="btn btn-primary" href="#" rel="noopener" target="_blank">Chat on WhatsApp</a>
           <p class="small">We usually reply within the day.</p>
         </div>
         <div>
@@ -198,7 +192,7 @@
 
   <footer class="site-footer">
     <div class="container footer-inner">
-      <p>© <span id="year"></span> Electro.lk — a@a Industries & Solutions. All rights reserved.</p>
+      <p>© <span id="year"></span> Electro.lk — a@a Industries &amp; Solutions. All rights reserved.</p>
       <div class="social">
         <a href="#" aria-label="Facebook" title="Facebook">
           <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M22 12a10 10 0 1 0-11.5 9.9v-7h-2v-2.9h2V9.5c0-2 1.2-3.1 3-3.1.9 0 1.8.1 1.8.1v2h-1c-1 0-1.3.6-1.3 1.2v1.4h2.3L15 14.9h-2v7A10 10 0 0 0 22 12z"/></svg>
